@@ -13,6 +13,13 @@ module.exports = () => {
     database: 'testdb',
     logging: true,
   };
-
+  config.redis = {
+    client: {
+      host: '127.0.0.1',
+      port: 6379,
+      password: 'test',
+      db: 0,
+    },
+  };
   return config;
 };
